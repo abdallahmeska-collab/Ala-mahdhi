@@ -1,0 +1,16 @@
+
+# Read the current file
+with open('/mnt/agents/output/index.html', 'r', encoding='utf-8') as f:
+    html_code = f.read()
+
+# Save as a clean HTML file (already is, but let's verify)
+with open('/mnt/agents/output/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_code)
+
+print("✅ File ready for download!")
+print(f"📁 Location: /mnt/agents/output/index.html")
+print(f"📊 Size: {len(html_code)} characters")
+print("\n📱 How to use on iPhone:")
+print("1. Download the file above")
+print("2. Open with VS Code / Code Editor app")
+print("3. Or upload to Netlify directly!")
